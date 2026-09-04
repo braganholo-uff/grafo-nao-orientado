@@ -60,8 +60,8 @@ void insere_aresta(TGrafo *g, int origem, int destino, int peso) {
         TVizinho *vizinho = (TVizinho *) malloc(sizeof(TVizinho));
         vizinho->id_vizinho = destino;
         vizinho->peso = peso;
-        vizinho->prox = vertice->prim_vizinho;
-        vertice->prim_vizinho = vizinho;
+        vizinho->prox = pv1->prim_vizinho;
+        pv1->prim_vizinho = vizinho;
     }
 }
 
